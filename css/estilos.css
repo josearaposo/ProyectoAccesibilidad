@@ -1,0 +1,739 @@
+* {
+    padding: 0;
+    color: #fff;
+    text-align: center;
+    font-family: 'Inria Sans', sans-serif;
+}
+
+/* 
+Estilos aplicados a todos las paginas en general tento en el header , main, aside,.... */
+body {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    max-height: 100vh;
+    margin: 0;
+}
+/* Posicionamiento de la cabecera */
+header {
+    position: relative;
+
+}
+p{
+    font-size: 1.25rem;
+    font-weight: bold;
+}
+
+/* Parte de la cabecera con el logo */
+.logo {
+    background-color: #76052A;
+    width: 39.5%;
+    height: 6rem;
+    border-radius: 1.25rem 1.25rem 0 0;
+    float: left;
+    margin-right: 0.5%;
+    padding-top: 1.875rem;
+    display: grid;
+    align-items: center;
+    justify-items: center;
+}
+/* Tamaño de imagenes en general */
+img {
+    height: 3.12rem;
+
+}
+
+/* Parte de la cabecera con el menu */
+.menu {
+
+    background-color: #E73C50;
+    width: 60%;
+    height: 6rem;
+    border-radius: 1.25rem 1.25rem 0 0;
+    float: left;
+    padding-top: 1.875rem;
+
+
+}
+
+/* Menu de navegacion, eliminamos las listas de estylos y toda la decoracion */
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    text-align: center;
+
+}
+
+nav li {
+    display: inline;
+    /*Horizontal*/
+    margin-right: 1.25rem;
+}
+
+nav a {
+
+    text-decoration: none;
+    color: white;
+    font-size: 18pt;
+    font-weight: bold;
+
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
+
+/* Parte izquierda aside  del contenido  */
+aside {
+    background-color: #76052A;
+    width: 39.5%;
+    margin-right: 0.5%;
+    border-radius: 0 0 1.25rem 1.25rem;
+    float: left;
+    display: grid;
+    grid-template-rows: 60% 15% 20%;
+    align-items: center;
+    justify-items: center;
+    margin-bottom: 0.3rem;
+}
+/* imagen izquierda de todas las páginas */
+.izquierda {
+    max-width: 90%;
+    max-height: 90%;
+    height: auto;
+    -webkit-transition: 1s linear;
+    transition: 1s linear;
+}
+
+.izquierda:hover{
+    -webkit-transform: rotate(360deg);
+    transform: rotateX(360deg);
+}
+
+/* Botones del aside */
+.boton {
+    max-width: 40%;
+    height: auto;
+    border-radius: 50%;
+    background: #005478;
+    width: 9.5rem;
+    -webkit-transition: 1s linear;
+    transition: 1s linear;   
+
+}
+
+.boton:hover {
+    background: #76052A;
+    -webkit-transform: scale(.5);
+    transform: scale(.5);
+}
+
+
+/* Estilos del cuerpo principal main de todas las web */
+main {
+    background-color: #E73C50;
+    width: 60%;
+    border-radius: 0 0 1.25rem 1.25rem;
+    float: right;
+    text-align: center;
+    color: white;
+    margin-bottom: 0.3rem;
+
+}
+
+.logoenmain {
+    max-width: 50%;
+    height: auto;
+}
+
+.contenedor-principal {
+    display: flex;
+    flex: 1;
+}
+
+.titulo {
+    color: white;
+}
+
+input,
+textarea {
+
+    width: 100%;
+    padding: 0.75rem 1.25rem;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #fff;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+.botontienda {
+    max-width: 40%;
+    height: auto;
+    border-radius: 50%;
+    background: #005478;
+    width: 10rem;
+}
+
+.botontienda:hover {
+    background: #E73C50;
+}
+
+.boton .botonformulario {
+    height: 6rem;
+}
+
+/* Configuración del footer */
+footer {
+    background-color: #76052A;
+    border-radius: 1.25rem;
+    color: white;
+    text-align: center;
+    padding: 0.625rem;
+    
+}
+
+.redes {
+    height: 1.875rem;
+}
+
+/* Pseudoelemento para marcar lo seleccionado del parrafo en gris */
+p::selection {
+    color: grey;
+}
+
+/* TIENDA
+------------------------------------------------------- */
+.contenedor-menu-articulos {
+    background-color: #76052A;
+    height: 5.6rem;
+    padding-top: 0.625rem;
+}
+
+.contenedor-navegacion ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    text-align: center;
+    padding-top: 0.3rem;
+
+}
+
+.contenedor-navegacion li {
+    display: inline;
+    /*Horizontal*/
+    margin-right: 1.25rem;
+}
+
+.contenedor-navegacion a {
+
+    text-decoration: none;
+    color: white;
+    font-size: 1rem;
+
+}
+
+.contenedor-navegacion a:hover {
+    text-decoration: underline;
+}
+
+.buscador-articulos {
+    display: inline-flex;
+
+    gap: 0.625rem;
+}
+
+/* Paginacion  de la tienda*/
+ul.pagination {
+    display: inline-block;
+    margin: 0;
+    padding-top: 0.625rem;
+}
+
+ul.pagination li {
+    display: inline;
+}
+
+ul.pagination li a {
+    color: white;
+    float: left;
+    padding: 9px 18px;
+    text-decoration: none;
+}
+
+ul.pagination li a.active {
+    background-color: #005478;
+    color: white;
+}
+
+ul.pagination li a.active:hover {
+    background-color: #76052A;
+}
+
+ul.pagination li a:hover:not(.active) {
+    background-color: #ddd;
+}
+
+
+
+.formulario {
+    border-radius: 0.3rem;
+    padding: 1.25rem;
+
+}
+
+.contenedor {
+    width: 90%;
+    max-width: 75rem;
+    margin: auto;
+    padding: 40px 0;
+}
+
+.titulo {
+    font-size: 1.5rem;
+    padding: 1.25rem 0;
+}
+
+.contenedor-articulos {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 1.25rem;
+
+}
+
+.contenedor-articulos p {
+    color: #005478;
+    font-size: 0.75em;
+    margin: 0.3rem;
+
+}
+
+p:nth-child(4) {
+    font-size: 1.5em;
+}
+
+label {
+    padding-top: 0.625rem;
+}
+
+.articulos {
+    border-radius: 0.625rem;
+    min-height: 9.5rem;
+    min-height: 12.5rem;
+    height: 12.5rem;
+    font-weight: bold;
+    padding: 1.25rem;
+    position: relative;
+    overflow: hidden;
+    background-color: white;
+
+
+}
+
+.card .textos {
+    height: 100%;
+
+
+}
+
+/* CONTACTO 
+---------------------------------------------*/
+
+.contenedor-formulario {
+    display: grid;
+    grid-template-rows: 40% 20% 40%;
+    align-items: center;
+    justify-items: center;
+    gap: 0.625rem;
+}
+
+/* Estilo del mapa de google */
+iframe {
+    border: 0;
+    width: 90%;
+    height: 12.5rem;
+    border-radius: 1.25rem;
+}
+
+form {
+    width: 70%;
+}
+
+.informacion-envio {
+    display: flex;
+    gap: 3.12rem;
+}
+
+.informacion-envio p {
+    padding-top: 3.12rem;
+}
+
+/* NOSOTROS
+-------------------------------------- */
+.cont-historia {
+    max-width: 75rem;
+    width: 70%;
+    border-radius: 1.25rem;
+
+}
+
+.cont-historia .bloque{
+    background-color: #E73C50;
+    margin: 0 0 1em;
+
+}
+
+.cont-historia .pregunta{
+    background-color: #005478;
+    border-radius: 1.25rem;
+    color: #fff;
+    margin: 0 0 1em;
+   
+}
+
+.cont-historia .contenido{
+    background-color: #fff;
+    border-radius: 1.25rem;
+    color: #76052A;
+    height: 0px;
+    padding: 0px;
+    overflow: hidden;
+    transition: all .4s ease;
+}
+
+.cont-historia .bloque.activo .contenido{
+    height: 4em;
+}
+
+
+
+
+.img-articulo {
+    height: 60px;
+}
+
+.img-carrito {
+    background-color: #E73C50;
+    border-radius: 50%;
+}
+
+.img-historia h1 {
+    width: 16rem;
+}
+/* Posicionamiento grid para la pagina articulo en filas */
+.main-contenedor-nosotros {
+    display: grid;
+    grid-template-rows: 40% 40% 20%;
+    align-items: center;
+    justify-items: center;
+}
+
+.iconos-historia {
+    display: inline-flex;
+    gap: 1.6rem;
+}
+
+.imagen-nosotros {
+    width: 18.75rem;
+    height: 18.75rem;
+}
+
+/* 
+ARTICULO 
+-----------------------------------*/
+
+.cont-grupo-imagenes{
+    width: 80%;
+    display: grid;
+    grid-template-columns: repeat(4 , 1fr);
+    gap: 0.625rem;
+    padding: 0.625rem;
+    margin-left: 1.875rem;
+    border-radius: 10PX;;
+}
+
+.cont-grupo-imagenes .mini{
+    overflow: hidden;
+    border-radius: 0.625rem;
+}
+
+.cont-grupo-imagenes .img{
+    height: 70px;
+    transition: all .5s ease;
+    transform:scale(1.4);
+ 
+}
+.cont-grupo-imagenes .mini:hover .img{
+    transform:scale(1);
+}
+
+
+/* ligthbox */
+
+.ligthbox {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%; 
+    z-index: 2;
+    display: none;
+}
+
+.ligthbox.activo{
+    display: flex;
+}
+
+
+.cerrar{
+    background-color: #76052A;
+    margin-left: 12.5rem;
+}
+.grande{
+    width: 40%;
+    height: 50vh;
+    margin-left: 28rem;
+    margin-top: 21.875rem;
+    border-radius: 1.25rem;
+}
+
+.contenido-caracteristicas {
+    background-color: #76052A;
+    display: flex;
+}
+
+.contenido-art {
+    float: left;
+
+}
+
+.contenenido-art ul {
+    list-style: none;
+}
+
+.imagen-articulo-individual {
+    height: 18.75rem;
+    border-radius: 0.625rem;
+
+}
+
+li img {
+    height: 9.5rem;
+    padding-top: 1rem;
+}
+
+button {
+    background-image: url("../imagenes/carrito-de-compras.png");
+    width: 3.12rem;
+    height: 3.12rem;
+    background-color: #005478;
+    border-radius: 50%;
+    background-repeat: round;
+}
+
+h4 {
+    margin-left: 3.12rem;
+}
+
+.contenedor-form-compra {
+    padding-left: 4.7rem;
+    gap: 0.3rem;
+}
+
+/* Tooltip */
+.tooltip-container {
+    position: relative;
+    }
+.tooltip-text {
+    visibility: hidden;
+    width: 11.25rem;
+    background-color: #76052A;
+    color: #fff;
+    text-align: center;
+    border-radius: 6px;
+    padding: 0.3rem;
+    position: absolute;
+    z-index: 1;
+    bottom: 125%; /* Posiciona el tooltip encima
+    del elemento */
+    left: 50%;
+    transform: translateX(-50%);
+    opacity: 0;
+    transition: opacity 0.3s;
+    }
+
+.tooltip-container:hover .tooltip-text {
+    visibility: visible;
+    opacity: 1;
+}
+
+/* video {
+    background-color: #005478;
+    padding: 1.25rem;
+
+} */
+
+.entrada-blog{
+    display: flex;
+    width: 100%;
+    margin: 1.25rem;
+    background-color:#fff;
+    border-radius: 1.25rem;
+
+
+}
+.entrada-blog p , h2{
+    color: #005478;
+    background-color: #FFF;
+}
+
+.info-blog{
+    flex: 1;
+    box-sizing: border-box;
+}
+
+.contenido-blog{
+    flex: 1;
+    box-sizing: border-box;
+    padding-right: 1.6rem;
+}
+.contenido-blog iframe{
+    padding-top: 1.25rem;
+}
+
+/* TABS */
+.contenedor-tabs {
+    max-width: 120em;
+    padding: 1em;
+    color: var(--negro);
+    -webkit-transition: all 0.4s ease;
+    transition: all 0.4s ease;
+    border-radius: 0.5em;
+  }
+  .contenedor-tabs .ul-tabs {
+    list-style: none;
+    width: 100%;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 0.625rem;
+  }
+
+  .contenedor-tabs .boton-tabs{
+    background-color: #005478;
+    padding: 0.625rem;
+    margin: 0, 2em 0 0;
+    transition: all .5s ease;
+    border-radius: 0.625rem;
+    cursor: pointer;
+  }
+  .contenedor-tabs .boton-tabs.activo{
+    background-color:#76052A;
+    border-radius: 0.625rem;
+
+  }
+
+  .contenedor-tabs .subcontenedor{
+    min-height: 10vh;
+    background-color: #76052A;
+    position: relative;
+    border-radius: 1.25rem;
+
+  }
+
+  .contenedor-tabs .bloque-tabs{
+    padding: 1em;
+    position: absolute;
+    top: 0;
+    opacity: 0;
+    transition: all .5s ease;
+  }
+
+  .contenedor-tabs .bloque-tabs.activo{
+    opacity: 1;
+  }
+
+/*   CARRUSEL */
+
+/* Carrusel */
+.carrusel {
+    width: 90%;
+    max-width: 120em;
+    padding: 2em;
+    padding-top: 0;
+    transition: all 0.4s ease;
+    border-radius: 1em;
+    overflow: hidden;
+  }
+  
+  .carrusel .carrusel-grande {
+    width: 400%;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    align-items: center;
+    transition: all 0.4s ease;
+    border-radius: 1em;
+    padding: 2em;
+    transition: all 0.5s ease;
+    transform: translateX(0%);
+  }
+  
+  .carrusel .div-carrusel {
+    width: calc( 100% / 4 - 4em);
+    min-height: 10vh;
+    transition: all 0.4s ease;
+    border-radius: 1em;
+  }
+  
+  .carrusel .puntos {
+    width: 100%;
+    margin: 1em 0 0;
+    padding: 0.4em;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .carrusel .punto {
+    width: 2em;
+    height: 2em;
+    margin: 1em 1em 0;
+    transition: all 0.4s ease;
+    border-radius: 1em;
+    background-color: #ddd;
+    list-style: none;
+  }
+  
+  .carrusel .punto.activo {
+    background-color: #005478;
+  }
+
+  .imagen-carrusel{
+    width: 30rem;
+    height: 22.5rem;
+  }
+/*   Responsiva */
+
+.img-resp{
+
+    display: block;
+    margin: 0 auto;
+    max-width: 95%;
+    height: auto;
+    border-radius: 1.25rem;
+    margin: 1rem;
+  }
+
+  .responsive{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    max-height: 100vh;
+    min-width:0px;
+    margin: 0;
+    background-color: #E73C50;
+  }
