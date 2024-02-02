@@ -23,7 +23,10 @@ p{
     font-size: 1.25rem;
     font-weight: bold;
 }
-
+a{
+    font-size: 1.25rem;
+    font-weight: bold;
+}
 /* Parte de la cabecera con el logo */
 .logo {
     background-color: #76052A;
@@ -75,7 +78,7 @@ nav a {
 
     text-decoration: none;
     color: white;
-    font-size: 18pt;
+    font-size: 1.5rem;
     font-weight: bold;
 
 }

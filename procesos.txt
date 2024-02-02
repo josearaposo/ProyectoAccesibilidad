@@ -1,1 +1,6 @@
 //Cambio los px a rem
+//Revision de las cabeceras añadiendo a las paginas un h1 indicando donde se encuentra.
+//Revision de jerarquias en encabezados sin saltarnos niveles en nosotros.
+Contenido texto:
+usu de strong para enfatizar en alguna ocasion
+//
