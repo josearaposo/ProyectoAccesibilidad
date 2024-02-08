@@ -22,6 +22,8 @@ header {
 p{
     font-size: 1.25rem;
     font-weight: bold;
+    max-width: 75ch;
+    line-height: 2.5rem;
 }
 a{
     font-size: 1.25rem;
@@ -233,7 +235,7 @@ p::selection {
 
     text-decoration: none;
     color: white;
-    font-size: 1rem;
+    font-size: 1.25rem;
 
 }
 
@@ -309,15 +311,21 @@ ul.pagination li a:hover:not(.active) {
     color: #005478;
     font-size: 0.75em;
     margin: 0.3rem;
+    line-height: 1rem;
 
 }
 
+p:nth-child(2) {
+    font-size: 1.25rem;
+}
 p:nth-child(4) {
     font-size: 1.5em;
 }
 
 label {
     padding-top: 0.625rem;
+    font-size: 1.25rem;
+    font-weight: bold;
 }
 
 .articulos {
@@ -363,6 +371,13 @@ form {
     width: 70%;
 }
 
+fieldset{
+    padding: 1rem;
+}
+.inputform:focus {
+    background: #005478;
+
+}
 .informacion-envio {
     display: flex;
     gap: 3.12rem;
@@ -406,7 +421,7 @@ form {
 }
 
 .cont-historia .bloque.activo .contenido{
-    height: 4em;
+    height: 8rem;
 }
 
 

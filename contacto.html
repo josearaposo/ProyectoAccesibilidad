@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -44,12 +44,15 @@
         <div class="contenedor-formulario">
             <h1 class="titulo">Contacto</h1>
         <form action="#">
-            <label for="nombre">Nombre</label>
-            <input type="text" name="nombre" id="nombre" placeholder="Escribe tu nombre">
-            <label for="correo">Correo</label>
-            <input type="email" name="correo" id="correo" placeholder="Correo">
-            <label for="mensaje">Mensaje</label>
-	    <textarea name="mensaje" for="mensaje" placeholder="Daja aqui tu mensaje.." maxlength="300" rows="3" cols="5"></textarea>
+            <fieldset>
+                <legend>Información personal</legend>
+            <label for="nombre">Nombre*</label>
+            <input type="text"  class="inputform" name="nombre" id="nombre" placeholder="Escribe tu nombre" autocomplete required>
+            <label for="correo">Correo*</label>
+            <input type="email" class="inputform" name="correo" id="correo" placeholder="Correo" autocomplete>
+            <label for="mensaje">Mensaje*</label>
+	    <textarea class="inputform" name="mensaje" for="mensaje" placeholder="Daja aqui tu mensaje.." maxlength="300" rows="3" cols="5"></textarea>
+        </fieldset>
         </form>
   
         <div class="informacion-envio">
