@@ -128,7 +128,7 @@ aside {
 
 }
 
-.boton:hover {
+ .boton:hover {
     background: #76052A;
     -webkit-transform: scale(.5);
     transform: scale(.5);
@@ -373,6 +373,13 @@ form {
 
 fieldset{
     padding: 1rem;
+}
+
+.inputform{
+    color: #76052A;
+    font-size: 1.25rem;
+    color: white;
+    
 }
 .inputform:focus {
     background: #005478;
